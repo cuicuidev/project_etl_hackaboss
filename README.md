@@ -83,18 +83,18 @@ Los datos transformados se cargaron a tablas de airtable utilizando la API. Se t
 Con los datos transformados se han obtenido las siguientes visualizaciones que pueden arrojar algo de luz sobre la situación actual de la industria de los videojuegos, así como su historia.
 
 ##### Fechas de salida por mes del año a lo largo de los años
-![Fechas de salida](vis/releases_fig.png)
-- Es muy interesante ver como de manera consistente hay más salidas de juegos en diciembre, probablemente debido a que se acercan las navidades y se espera mayor venta.
+![Fechas de salida](vis/releases_fig.png)<br>
+Es muy interesante ver como de manera consistente hay más salidas de juegos en diciembre, probablemente debido a que se acercan las navidades y se espera mayor venta.
 Asimismo, también es curioso ver una bajada brusca en 2019. Es posible que la subida de precios de las tarjetas gráficas por la minería de criptomonedas tuvo algo que ver.
 ##### Top 10 Frameworks de desarrollo de videojuegos (general)
-![Motores gŕaficos](vis/engines_fig.png)
-- Aquí podemos ver a los dos gigantes en el mundo del game dev, Unity y Unreal Engine, dominando el top 10 con sus diferentes versiones. Al ser frameworks potentes a la vez que gratuitos, no es de extrañar que sean los más utilizados con diferencia.
+![Motores gŕaficos](vis/engines_fig.png)<br>
+Aquí podemos ver a los dos gigantes en el mundo del game dev, Unity y Unreal Engine, dominando el top 10 con sus diferentes versiones. Al ser frameworks potentes a la vez que gratuitos, no es de extrañar que sean los más utilizados con diferencia.
 ##### Popularidad del Top 10 a lo largo de los años
-![Motores gŕaficos por año](vis/engines_years_fig.png)
-- En esta visualización podemos ver la evolución de la popularidad del top 10 a lo largo de los años, donde destaca la transcendencia sobre todo de Unity.
+![Motores gŕaficos por año](vis/engines_years_fig.png)<br>
+En esta visualización podemos ver la evolución de la popularidad del top 10 a lo largo de los años, donde destaca la transcendencia sobre todo de Unity.
 ##### Popularidad de los lenguajes (audio y subtitulos)
-![Soporte de lenguajes](vis/languages_fig.png)
-- No es de extrañar que el lenguaje más común sea el inglés. No obstante, esta visualización ofrece algo más que eso. Podemos ver como, bajando en popularidad, cada vez hay menos y menos soporte de audio en relación al soporte de subtítutlos, lo que nos indica que la falta de soporte de lenguajes no se debe solamente al desinterés de los desarrolladores, sino también a la falta de recursos.
+![Soporte de lenguajes](vis/languages_fig.png)<br>
+No es de extrañar que el lenguaje más común sea el inglés. No obstante, esta visualización ofrece algo más que eso. Podemos ver como, bajando en popularidad, cada vez hay menos y menos soporte de audio en relación al soporte de subtítutlos, lo que nos indica que la falta de soporte de lenguajes no se debe solamente al desinterés de los desarrolladores, sino también a la falta de recursos.
 ##### Distribuciones de géneros y cateogrías de los videojuegos
-![Géneros y categorías](vis/genres_categories_fig.png)
-- Por último, podemos ver la distribución de los productos dentro de cada género. Se ha eliminado la categoría 'main_game' puesto que al ser la más común, no se podía apreciar la dominancia de las otras categorías.
+![Géneros y categorías](vis/genres_categories_fig.png)<br>
+Por último, podemos ver la distribución de los productos dentro de cada género. Se ha eliminado la categoría 'main_game' puesto que al ser la más común, no se podía apreciar la dominancia de las otras categorías.
