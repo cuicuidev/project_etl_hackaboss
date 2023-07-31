@@ -160,6 +160,8 @@ def genres_categories_fig(dataframe):
             genres_dict[genre] = genres_dict[genre] + 1
 
         genres_categories_dict[category] = genres_dict
+    
+    del genres_categories_dict['main_game']
 
     df_melt = pd.DataFrame(genres_categories_dict).reset_index().melt(id_vars='index', var_name='category', value_name='value')
     df_melt.rename(columns={'index':'genre'}, inplace=True)
