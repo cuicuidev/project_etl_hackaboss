@@ -76,6 +76,7 @@ def engines_fig(dataframe):
     engine_counts_df = pd.DataFrame(engines_df.value_counts()).rename(columns = {0 : 'count'}).reset_index().rename(columns = {0 : 'engines'})
 
     #se asigna una etiqueta top5 a cada motor para una visualización más interactiva
+    engine_counts_df = engine_counts_df.sort_values('count', ascending = False)
     engine_counts_df['top'] = [f'Top {(idx // 5 + 1)*5}' for idx in engine_counts_df.index]
 
     #creamos el histograma con engine_counts_df
@@ -88,6 +89,10 @@ def engines_fig(dataframe):
 
 def engines_years_fig(dataframe):
     engines_years_df = dataframe[['game_engines', 'year_release']].dropna()
+
+    engines_only = _unpackLists(dataframe['game_engines'])
+    engine_counts_df = pd.DataFrame(engines_only.value_counts()).rename(columns = {0 : 'count'}).reset_index().rename(columns = {0 : 'engines'})
+    top10 = list(engine_counts_df.sort_values('count', ascending = False).head(10)['game_engines'])
 
     engines_year_dict = {}
 
@@ -117,6 +122,8 @@ def engines_years_fig(dataframe):
 
     df_melt = pd.DataFrame(engines_year_dict).reset_index().melt(id_vars='index', var_name='Year', value_name='Value')
     df_melt.rename(columns={'index':'Engine'}, inplace=True)
+
+    df_melt = df_melt[df_melt['Engine'].isin(top10)]
 
     engines_years_fig = px.line(data_frame = df_melt.sort_values(['Year', 'Value'], ascending = True),
                                 x = 'Year',
