@@ -43,4 +43,8 @@ pip install -r dependencies.txt
 ```
 donde deberán rellenar los campos con sus claves personales de las APIs.
 
- ![Motores gŕaficos](vis/engines_fig.png)
+![Motores gŕaficos](vis/engines_fig.png)
+![Motores gŕaficos por año](vis/engines_years_fig.png)
+![Géneros y categorías](vis/genres_categories_fig.png)
+![Soporte de lenguajes](vis/languages_fig.png)
+![Fechas de salida](vis/releases_fig.png)
