@@ -24,7 +24,7 @@ source venv/bin/activate
 ```
 ##### Acto seguido, instalan todas las dependencias.
 ```sh
-pip install -r requirements.txt
+pip install -r dependencies.txt
 ```
 ##### Por último, crean un archivo api.json y rellenan los campos con sus claves API siguiendo este formato.
 ```json
