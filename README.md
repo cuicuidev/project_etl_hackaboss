@@ -1,19 +1,23 @@
-# Proyecto ETL utilizando la API de IGDB de Twitch
+# Proyecto ETL Hackaboss
+Hola, somos Dmitry Ryzhenkov, Samuel Pascual y Jacobo Brandariz Morano, estudiantes del bootcamp de Data Science de Hackaboss. Bienvenido a nuestro pequeño proyecto ETL de datos de videojuegos de IGDB de Twitch. <br><br>
+Este trabajo muestra nuestras habilidades programando en Python así como el uso de algunas de sus librerías más relevantes en el mundo de los datos. Pueden también apreciar nuestro manejo de API's, comprensión de bases de datos relacionales, pipelines de ETL y, como bonus, nuestra habilid para la visualización de datos. Si desean, pueden ejecutar 'main.ipynb' desde Jupyter Notebooks y ver como funciona todo, además de interactuar con las visualizaciones (sí, son interactivas).<br><br>
+En cualquier caso, pueden seguir bajando para ver un resumen del proceso y los resultados.
+
 ### Instrucciones
-##### Desde la consola, clonan el repositorio.
+Desde la consola, clonan el repositorio.
 ```sh
 git clone https://github.com/cuicuidev/project_etl_hackaboss.git
 
 ```
-##### Una vez clonado, navegan a la carpeta.
+Una vez clonado, navegan a la carpeta.
 ```sh
 cd project_etl_hackaboss
 ```
-##### Desde ahí, crean un entorno nuevo de python.
+Desde ahí, crean un entorno nuevo de python.
 ```sh
 python3 -m venv venv
 ```
-##### Una vez creado el entorno, lo activan.
+Una vez creado el entorno, lo activan.
 - Para los usuarios de Windows:
 ```sh
 .\venv\Scripts\activate
@@ -22,11 +26,11 @@ python3 -m venv venv
 ```sh
 source venv/bin/activate
 ```
-##### Acto seguido, instalan todas las dependencias.
+Acto seguido, instalan todas las dependencias.
 ```sh
 pip install -r dependencies.txt
 ```
-##### Por último, crean un archivo api.json y rellenan los campos con sus claves API siguiendo este formato.
+Por último, deben crear un archivo api.json y rellenar los campos con sus claves API siguiendo este formato.
 ```json
 {
     "IGDB" : {
